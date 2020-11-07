@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings1-download</title>
+    <style>
+        * {
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="section">
+
+    </section>
+    <script>
+        let quote = 'I do not like green eggs and ham. I do not like them, Sam-I-Am.';
+        let substring = 'green eggs and ham';
+        let quoteLength = quote.length;
+        let index = quote.indexOf(substring);
+        let revisedQuote = quote.substr(0, index) + substring;
+        console.log(revisedQuote)
+        console.log(quote)
+        const section = document.querySelector('.section');
+        let para = document.createElement('p');
+        para.innerText = revisedQuote;
+        section.appendChild(para);
+
+    </script>
+</body>
+
+</html>

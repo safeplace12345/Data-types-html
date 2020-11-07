@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings1-download</title>
+    <style>
+        * {
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="section">
+
+    </section>
+    <script>
+        let quote = 'I dO nOT lIke gREen eGgS anD HAM';
+        let substring = 'green eggs and ham';
+        let fixedQuote = quote[0].toUpperCase() + quote.slice(1).toLowerCase();
+        const finalQuote = fixedQuote.replace(/green eggs and ham/i,'bacon and pizza') +'.';
+        const section = document.querySelector('.section');
+        let para = document.createElement('p');
+        para.innerText = finalQuote;
+        section.appendChild(para);
+    </script>
+</body>
+
+</html>

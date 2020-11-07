@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings4-download</title>
+    <style>
+        * {
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="section">
+
+    
+    <script>
+       const printTheorem =() =>{
+            let theorem = 0;
+           let a = 5;
+           let b = 8;
+          theorem += Math.pow(a,2) + Math.pow(b,2); 
+        return Math.sqrt(theorem);
+        console.log(Math.sqrt(theorem))
+        const para = document.createElement('p');
+        para.innerText = theorem + ' is the Theorem';
+        const section = document.querySelector('.section');
+        section.appendChild('para');
+    }
+   console.log( printTheorem());
+   document.querySelector('.section').innerHTML = printTheorem();
+    </script>
+    </section>
+</body>
+
+</html>
